@@ -7,10 +7,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v1
-    - name: Install Ruby (3.2)
-      uses: actions/setup-ruby@v1
+    - name: Install Ruby
+      uses: ruby/setup-ruby@v1
       with:
-        ruby-version: '3.2.3'  # Updated to match your project's Ruby version
+        ruby-version: '3.2.3'  # Specify your Ruby version here
     - name: Build and test with RSpec
       run: |
         gem install bundler
