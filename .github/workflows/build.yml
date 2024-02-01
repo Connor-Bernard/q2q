@@ -8,9 +8,9 @@ jobs:
     steps:
     - uses: actions/checkout@v1
     - name: Install Ruby
-      uses: ruby/setup-ruby@v1
+      uses: actions/setup-ruby@v1
       with:
-        ruby-version: '3.2.3'  # Specify your Ruby version here
+        ruby-version: 3.2.3
     - name: Build and test with RSpec
       run: |
         gem install bundler
